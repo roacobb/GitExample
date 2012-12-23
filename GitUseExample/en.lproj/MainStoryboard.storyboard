@@ -28,11 +28,24 @@
                                     <action selector="clickTheButton:" destination="2" eventType="touchUpInside" id="fq6-Mp-1CM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3F-wQ-XQe">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="This label will show up in the trunk after merging">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="me1-x3-1jK" firstAttribute="centerX" secondItem="a3F-wQ-XQe" secondAttribute="centerX" type="default" id="3Ab-za-3wu"/>
+                            <constraint firstAttribute="trailing" secondItem="a3F-wQ-XQe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="KM3-lV-vLB"/>
+                            <constraint firstItem="a3F-wQ-XQe" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MJR-fw-s7d"/>
+                            <constraint firstItem="a3F-wQ-XQe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="cb4-jp-uNo"/>
                             <constraint firstItem="me1-x3-1jK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="uhx-x5-k9W"/>
-                            <constraint firstItem="me1-x3-1jK" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="zxq-VQ-42g"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +53,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickTheButton:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
